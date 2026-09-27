@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CitaFácil · Administración</title><link rel="stylesheet" href="/app.css"><script src="/admin.js" defer></script></head>
+<body>
+<section id="loginPage" class="login-page">
+  <div class="login-story"><span class="brand"><b>+</b> CitaFácil</span><p class="eyebrow">TU AGENDA, EN ORDEN</p>
+  <h1>Más tiempo<br>para atender.</h1><p>Una agenda compartida para organizar las citas y acompañar cada atención.</p>
+  <div class="story-note"><span>01 /</span> Horarios claros<br><span>02 /</span> Reservas sin cruces<br><span>03 /</span> Todo en un solo lugar</div>
+  <small>Proyecto académico · Datos de demostración</small></div>
+  <form id="loginForm" class="login-form"><p class="eyebrow">PORTAL ADMINISTRATIVO</p><h2>Bienvenido de nuevo</h2><p>Ingresa con tu cuenta de administrador.</p>
+  <label>Correo electrónico<input name="email" type="email" required autocomplete="username" placeholder="tu@correo.com"></label>
+  <label>Contraseña<input name="password" type="password" required minlength="10" maxlength="128" autocomplete="current-password"></label>
+  <button class="primary" type="submit">Ingresar al portal <span>→</span></button><p id="loginMessage" role="alert"></p>
+  <a href="/">Acerca del proyecto</a></form>
+</section>
+<div id="app" hidden>
+  <aside><a class="brand" href="/"><b>+</b> CitaFácil</a><p class="nav-label">CONSULTORIO / AGENDA</p>
+  <nav aria-label="Administración">
+    <button data-page="appointments" class="active">Citas <span>01</span></button>
+    <button data-page="services">Servicios <span>02</span></button>
+    <button data-page="professionals">Profesionales <span>03</span></button>
+    <button data-page="schedules">Horarios <span>04</span></button>
+    <button data-page="users">Usuarios <span>05</span></button>
+    <button data-page="roles">Roles <span>06</span></button>
+    <button data-page="sessions">Sesiones <span>07</span></button>
+  </nav><div class="sidebar-bottom"><strong id="currentUser"></strong><small>Administración</small><button id="logout" class="quiet">Cerrar sesión ↗</button></div></aside>
+  <main><header><span class="eyebrow">CITAFÁCIL / PANEL DE CONTROL</span><span id="today"></span></header>
+  <div class="page-heading"><div><h1 id="pageTitle">Tu agenda de citas</h1><p id="pageDescription">Organiza cada atención, desde la reserva hasta su cierre.</p></div>
+  <button id="create" class="primary">+ Nuevo registro</button></div>
+  <section id="metrics" class="metrics" aria-label="Resumen de citas"></section>
+  <section class="workspace"><div class="toolbar">
+    <label class="search-label">Buscar<input id="search" type="search" placeholder="Nombre, servicio, profesional…"></label>
+    <label id="statusLabel">Estado<select id="statusFilter"><option value="">Todos los estados</option><option>PENDIENTE</option><option>CONFIRMADA</option><option>ATENDIDA</option><option>CANCELADA</option></select></label>
+    <label id="serviceLabel">Servicio<select id="serviceFilter"><option value="">Todos los servicios</option></select></label>
+    <label id="dateLabel">Fecha<input type="date" id="dateFilter"></label>
+    <button id="reload" class="quiet">Actualizar ↻</button>
+  </div><p id="message" class="message" role="status" aria-live="polite"></p>
+  <div class="table-scroll"><table><thead id="head"></thead><tbody id="rows"></tbody></table></div>
+  <div id="empty" class="empty" hidden><span>◎</span><h2>Nada por aquí todavía</h2><p>No hay registros que coincidan con la búsqueda.</p></div>
+  <footer><span id="count"></span><span>Hora de Lima · UTC −05:00</span></footer></section>
+  <p class="academic">CitaFácil · Desarrollo de Aplicaciones Móviles I · Demostración académica</p>
+  </main>
+</div>
+<dialog id="editor"><form id="editForm"><div class="dialog-top"><div><p class="eyebrow">CITAFÁCIL</p><h2 id="editTitle">Nuevo registro</h2></div><button type="button" id="closeEditor" class="quiet" aria-label="Cerrar">✕</button></div>
+<div id="fields"></div><p id="formMessage" role="alert"></p><div class="dialog-actions"><button type="button" id="cancelEdit" class="quiet">Volver</button><button type="submit" class="primary">Guardar cambios</button></div></form></dialog>
+</body></html>

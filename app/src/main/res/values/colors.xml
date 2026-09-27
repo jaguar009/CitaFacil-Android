@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="citafacil_background">#F5F7F2</color>
+    <color name="citafacil_primary">#236952</color>
+    <color name="citafacil_primary_dark">#174C3B</color>
+    <color name="citafacil_text">#163E34</color>
+    <color name="citafacil_secondary_text">#6D7D89</color>
+    <color name="citafacil_border">#DCE6ED</color>
+</resources>

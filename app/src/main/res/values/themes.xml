@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/citafacil_primary</item>
+        <item name="colorPrimary">@color/citafacil_primary</item>
+        <item name="colorSecondaryContainer">#E0EEE4</item>
+        <item name="colorOnSecondaryContainer">#174C3B</item>
+        <item name="colorSecondary">@color/citafacil_primary_dark</item>
+        <item name="android:navigationBarColor">@color/citafacil_background</item>
+        <item name="android:statusBarColor">@color/citafacil_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+</resources>

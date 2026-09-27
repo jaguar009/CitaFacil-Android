@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "citafacil",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-09-20",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "citafacil-academico",
+    "database_id": "39eeea2c-8fa2-4f62-a1cb-bfddf80304b5",
+    "migrations_dir": "migrations"
+  }],
+  "observability": {"enabled": true, "head_sampling_rate": 1}
+}
