@@ -4,8 +4,8 @@ Proyecto del curso **Desarrollo de Aplicaciones Móviles I**. Incluye una aplica
 
 ## Abrir en Android Studio
 
-1. Descarga este repositorio con **Code → Download ZIP** y descomprímelo. También puedes clonarlo con `git clone`.
-2. En Android Studio elige **Open** y selecciona la carpeta **CitaFacil** que contiene `settings.gradle.kts`, `gradlew.bat` y `app/`. No abras solo `app/`.
+1. Descarga este repositorio con **Code → Download ZIP** y descomprímelo. También puedes clonarlo con `git clone https://github.com/jaguar009/CitaFacil-Android.git`.
+2. En Android Studio elige **Open** y selecciona la carpeta del proyecto extraído (en el ZIP de esta entrega se llama `CitaFacil`; el ZIP de GitHub la llama `CitaFacil-Android-main`). Debe contener `settings.gradle.kts`, `gradlew.bat` y `app/`; no abras solo `app/`.
 3. Espera a que Gradle sincronice y descargue sus dependencias. Acepta instalar el Android SDK que pida el IDE. El proyecto usa **compileSdk 37**, **minSdk 24** y el wrapper **Gradle 9.6**.
 4. Selecciona un emulador o teléfono Android y pulsa **Run ▶** sobre la configuración **app**.
 5. En la pantalla de inicio crea una cuenta de paciente con tu propio correo de prueba y una contraseña de al menos 10 caracteres. La app se conecta por HTTPS a la API académica configurada en [ApiClient.java](app/src/main/java/com/example/myapplication/data/remote/ApiClient.java).
